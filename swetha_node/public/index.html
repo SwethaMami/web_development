@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-U-Compatable" content="IE=edges">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+        <title>css grid</title>
+        <style>
+            :root{
+                --blue: #716feb;
+                --yellows: #6ff0e3;
+                --mymargin: 3px;
+                --bluee: pink;
+            }
+
+            .container{
+               display: grid;
+               height: 100vh;
+               grid-template-columns: 1fr;
+               grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.2fr;
+               grid-template-areas:
+               "nav"
+               "abtme"
+               "myedu"
+               "myprj"
+               "myexp"
+               "myblogs"
+               "mycnt"
+               "foot" ;
+            }
+
+
+            #menu{
+
+                word-spacing: 48px;
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+                margin: 10px;
+
+            }
+
+            nav{
+                margin: var(--mymargin);
+                background: pink;
+                grid-area:nav;
+
+            }
+
+
+            #abtme{
+
+                background: aquamarine;
+                grid-area: abtme;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+            }
+            #myedu{
+
+                background: palevioletred;
+                grid-area: myedu;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+
+            }
+
+            #myprj{
+
+                background: yellowgreen;
+                grid-area: myprj;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+
+            }
+
+            #myexp{
+
+                background: paleturquoise;
+                grid-area: myexp;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+
+
+            }
+
+            #myblogs{
+
+                background: palegreen;
+                grid-area: myblogs;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+
+            }
+
+            #mycnt{
+
+                background: pink;
+                grid-area: mycnt;
+                margin: var(--mymargin);
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+
+            }
+
+            footer{
+
+                background-color: pink;
+                grid-area: foot;
+                margin: var(--mymargin);
+
+            }
+            #pic1{
+
+                align-items: center;
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 width: 20%;
+
+            }
+
+            #foot{
+
+                word-spacing: 210px;
+                margin: 5px;
+                font-family: 'Dancing Script', cursive;
+                font-family: 'Explora', cursive;
+            }
+
+            #pic2{
+
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+
+            }
+
+            #pic3{
+
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+
+            }
+
+            #pic4{
+
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+
+            }
+
+            #pic5{
+
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+
+            }
+
+            #pic6{
+
+                align-items: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;
+
+            }
+
+            @media only screen and (max-width: 490px){
+                .container{
+
+                    grid-template-columns:1fr;
+                    grid-template-rows: 0.4fr 1fr 2.2fr 2fr
+                                        1.2fr 1.2fr 1.2fr 1.2fr;
+                    grid-template-areas:
+                    "nav"
+                    "abtme"
+                    "myedu"
+                    "myprj"
+                    "myexp"
+                    "myblogs"
+                    "mycnt"
+                    "foot" ;
+                     }
+
+                }
+        </style>
+    </head>
+    <body>
+
+    <div class="container">
+
+        <nav>
+
+            <menu id="menu">
+
+              <a style="font-size: 2.25vw;" href="#abtme"><b>About</b></a>   
+              <a style="font-size: 2.25vw;" href="#myedu"><b>Education</b></a>
+              <a style="font-size: 2.25vw;" href="#myprj"><b>Project</b></a>
+              <a style="font-size: 2.25vw;" href="#myexp"><b>Experience</b></a>
+              <a style="font-size: 2.25vw;" href="#myblogs"><b>Blogs</b></a>
+              <a style="font-size: 2.25vw;" href="#mycnt"><b>Contact</b></a>
+              <a style="font-size: 2.25vw;" href="#foot"><b>Social_Media</b></a>
+            
+            </menu>   
+
+        </nav>
+
+         <div  id="abtme">
+
+                <h1 style="font-size:2.5vw;">
+
+                   About Me
+               
+                </h1>
+
+                 <p style="font-size:1.5vw;">
+
+                    Hi Everyone,
+                    this is Swetha Mamidiga I'm originally from India. I'm Doing my masters in Computer science at University Of New Haven and Currently im Working as a Graduate assistant In the Enrollment Operations.
+
+                </p>
+
+                <img  id="pic1"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEGuT-IZdYrEGHb2rX23HDKEPxrUS3NdPiQ&usqp=CAU" alt="" >
+                    
+        </div>
+                   
+        <div id="myedu">
+
+                <h1 style="font-size:2.5vw;">
+
+                    My Education
+   
+               </h1> 
+   
+               <p style="font-size:1.5vw;">
+                   
+                   I have done my High school from Annie Besant Junior College.
+                   
+               </p>
+   
+               <p style="font-size:1.5vw;">
+   
+                I have done my Bachelors in Stats and Computers from Annie Besant Womens College
+                   
+               
+               </p>
+   
+               <p style="font-size:1.5vw;">
+   
+                After my Undergrad i have worked in Operations for almost 3 years then after i have prepared for higher studies in USA.
+              
+               </p>
+   
+               <p style="font-size:1.5vw;">
+   
+                   Currently, im doing my masters in computer science at Univetrsity of New Haven and this is my last semester.
+   
+               </p>    
+                 
+               <img id="pic2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyXwNouMhwNEAcdmeJQZ9pvb_iHANohlg8TdB68opod9EEmVzMG1rCP94MP82rw61c50w&usqp=CAU" alt="">
+
+        </div>
+
+        <div id="myprj">
+                 
+                <h1 style="font-size:2.5vw;">
+                    My Projects
+        
+        
+                </h1>
+        
+                <p style="font-size:1.5vw;">
+        
+                    In my undergraduate as per my ciriculam i dont have any projects..
+                    But, When i started my job in operations i have done a major Projects which improved my skills.
+                    
+                </p>
+        
+                <p style="font-size:1.5vw;">
+        
+                   And now, im working as a graduate assistant in the enrollment operation and i have done two major projects.
+                   
+                </p>
+        
+                <p style="font-size:1.5vw;">
+        
+                    one is implementing slate with the java code for uploading i20's.
+               
+                </p>
+
+                <p style="font-size:1.5vw;">
+                
+                    And the other one is a Quick GPA calculator for the admission office.
+
+                </p>
+
+                <img id="pic3" src="https://th.bing.com/th/id/OIP.FX7IfWKRV-NrgrAnRopm4AHaE7?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            
+                 <img id="pic4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM-p-m5cQzVMVDQPnJqrIYEQSsvqjZkzyIZg&usqp=CAU" alt="">
+     
+        </div>
+
+        <div id="myexp">
+
+                <h1 style="font-size:2.5vw;">
+
+                    My Experience
+    
+                </h1>
+    
+                <p style="font-size:1.5vw;">
+    
+                    My First Job is in Accenture PVt LMt, and our client is Facebook and i worked for Operations .
+               
+                </p>   
+
+                <p style="font-size:1.5vw;">
+               
+                    Ensure maximum and accurate decisions to be taken on Client data, Operate as a key contributor to the team to set standard work, audit standard work, and improve standard work while problem solving,Provide feedback on employee and team performance to the supervisor and manager,Weekly connects with mentee, newbies and BQ performers   and understand the reason and work as per action plan provided.
+                
+                </p>
+    
+                <p style="font-size:1.5vw;">
+    
+                    And my second job is in University of New haven at enrollment Operations as a graduate assistant and i worked for Operations.
+                
+                </p>    
+                
+                <p style="font-size:1.5vw;">
+    
+                    Participated in technology-focused best practices to all Slate activities, coordinated closely with other student information system platforms and managed integrations across these platforms,Understood the systems interdependencies and collaborated with the project teams accordingly,Work with claims leadership teams to identify, develop and implement business process and tool used by agent to improve advertisement result,Performed other related duties both inside and outside of Slate as required and assigned work.
+                
+                </p>
+
+                <img id="pic5" src="https://th.bing.com/th/id/OIP.LIvBk7Y0DOrkFZKGrPArSwHaGl?w=232&h=206&c=7&r=0&o=5&pid=1.7" alt="">
+        </div>
+            
+        <div id="myblogs">
+
+                <h1 style="font-size:2.5vw;">
+
+                    My Blogs
+    
+                </h1>
+    
+                <p style="font-size:1.5vw;">
+    
+                    Up to now I have not written any article, but in future i will write about Jesus my Savior who saved my soul and who gave me this beautiful life..
+                
+                </p>
+
+                <img id="pic6" src="https://th.bing.com/th/id/OIP.hA6B0QiNG9rTPzPZpCBTWwHaGN?w=201&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+            
+        </div>
+
+         <div id="mycnt">
+
+                <h1 style="font-size:2.5vw;">
+               
+                My Contacts
+            
+           </h1>
+
+           <footer>
+            <menu id="foot">
+         
+                <a style="font-size: 2vw;"  href="https://www.facebook.com/" target="_blank">Facebook</a>   
+                <a style="font-size: 2vw;"  href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a>
+                <a style="font-size: 2vw;"  href="https://www.linkedin.com/login" target="_blank">Linkedin</a>
+                <a style="font-size: 2vw;"  href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJyZWRpcmVjdF9hZnRlcl9sb2dpbiI6Imh0dHBzOi8vYWRzLnR3aXR0ZXIuY29tL2xvZ2luIiwiaGlkZV9tZXNzYWdlIjoiMSJ9%22%7D" target="_blank">Twitter</a>
+            </menu>
+        </footer>
+         </div>
+
+        
+
+    </div>
+
+
+               
+    
+
+        
